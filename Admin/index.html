@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">ADMIN</a>
+      <button class="navbar-toggler" data-toggler="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav">
+        <li class="nav-item px-2">
+          <a href="index.html" class="nav-link active"><span>Dashboard </span></a>
+        </li>
+        <li class="nav-item px-2">
+          <a href="l.html" class="nav-link">Licence</a>
+        </li>
+        <li class="nav-item px-2">
+          <a href="r.html" class="nav-link">Registration</a>
+        </li>
+        <li class="nav-item px-2">
+          <a href="permit.html" class="nav-link ">Permits</a>
+        </li>
+        <li class="nav-item px-2">
+          <a href="report.html" class="nav-link ">Report</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto"> <!--  (start) mr-auto , me-auto(end)-->
+        <li class=" dropdown show mr-3">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="fas fa-user"></i>Welcome
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a href="profile.html" class="dropdown-item">
+              <i class="fas fa-user-circle"></i>Profile
+            </a>
+            <a href="settings.html" class="dropdown-item">
+              <i class="fas fa-cog"></i>Settings
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link">
+            <i class="fas fa-user-times"></i>Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <header id="main-header" class="py-2 bg-primary text-white">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-md-6">
+          <h1><i class="fas fa-cog"></i>Dashboard</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+
+  <section class="py-4 mb-4 bg-light" id="actions">
+    <div class="container">
+      <div class="form-row">
+        <form>
+          <div class="form-group col-md-6 w-25">
+            <label for="category"> Search By</label>
+            <select name="" id="" class="form-control-md">
+              <option value="">Licence</option>
+              <option value="">Registration No</option>
+              <option value="">Permit No</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append">
+                <button class="btn btn-primary">Search</button>
+              </div>
+            </div>
+        </form>
+        <form >
+          <div class="form-group col-md-3 w-25">
+            <label for="category">Period</label>
+            <select name="" id="" class="form-control-md">
+              <option value="">Day</option>
+              <option value="">Week</option>
+              <option value="">Month</option>
+              <option value="">Year</option>
+
+            </select>
+          </div>
+        </form>
+
+
+
+
+      </div>
+    </div>
+  </section>
+<!-- DATA-->
+<section class="" id="posts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header">
+            <h4>Data</h4>
+          </div>
+          <table class="table table-striped">
+            <thead class="thead-dark bg-primary text-white">
+              <tr>
+                <th>#</th>
+                <th>Licence</th>
+                <th>Registration No</th>
+                <th>Permit No</th>
+                <th>Issue Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>xxxx</td>
+                <td>yyyyy</td>
+                <td>zzzzz</td>
+                <td>dd/mm/yr</td>
+                <td><a data-target="#details"  data-toggle="modal" href="#" class="btn btn-primary">
+                  <i class="fas fa-angle-double-right">Details</i>
+                </a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>xxxx</td>
+                <td>yyyyy</td>
+                <td>zzzzz</td>
+                <td>dd/mm/yr</td>
+                <td><a href="details.html" class="btn btn-secondary">
+                  <i class="fas fa-angle-double-right">Details</i>
+                </a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>xxxx</td>
+                <td>yyyyy</td>
+                <td>zzzzz</td>
+                <td>dd/mm/yr</td>
+                <td><a href="details.html" class="btn btn-secondary">
+                  <i class="fas fa-angle-double-right">Details</i>
+                </a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>xxxx</td>
+                <td>yyyyy</td>
+                <td>zzzzz</td>
+                <td>dd/mm/yr</td>
+                <td><a href="details.html" class="btn btn-secondary">
+                  <i class="fas fa-angle-double-right">Details</i>
+                </a></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>xxxx</td>
+                <td>yyyyy</td>
+                <td>zzzzz</td>
+                <td>dd/mm/yr</td>
+                <td><a href="details.html" class="btn btn-secondary">
+                  <i class="fas fa-angle-double-right">Details</i>
+                </a></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>xxxx</td>
+                <td>yyyyy</td>
+                <td>zzzzz</td>
+                <td>dd/mm/yr</td>
+                <td><a href="details.html" class="btn btn-secondary">
+                  <i class="fas fa-angle-double-right">Details</i>
+                </a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-3 ">
+        <div class="card text-center bg-primary text-white mb-3" style="width: 18rem;">
+          <div class="card-body">
+            <h3>Licence</h3>
+            <h4 class="display-7">
+              <i class="fas fa-pencil-alt">6</i>
+            </h4>
+            <a href="l.html" class="btn btn-outline-light btn-sm">View</a>
+
+          </div>
+        </div>
+
+        <div class="card text-center bg-primary text-white mb-3" style="width: 18rem;">
+          <div class="card-body">
+            <h3>Registration</h3>
+            <h4 class="display-7">
+              <i class="fas fa-pencil-alt">6</i>
+            </h4>
+            <a href="r.html" class="btn btn-outline-light btn-sm">View</a>
+
+          </div>
+        </div>
+
+        <div class="card text-center bg-primary text-white mb-3 " style="width: 18rem;">
+          <div class="card-body">
+            <h3>Permits</h3>
+            <h4 class="display-7">
+              <i class="fas fa-pencil-alt">6</i>
+            </h4>
+            <a href="permit.html" class="btn btn-outline-light btn-sm">View</a>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="details">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-header">Application</h5>
+      <button class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button> </div>
+
+      <div class="modal-body">
+        <form >
+          <fieldset class="form-group">
+            <label for="fname">Name </label>
+            <input type="text" id="fname" name="fname" >
+          </fieldset>
+            
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<footer class="page-footer font-small blue bg-dark text-white">
+  <div class="footer-copyright text-center py-3"> Copyright &copy; span.#yearAdmin
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
